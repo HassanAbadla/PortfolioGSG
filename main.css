@@ -1,0 +1,251 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    
+}
+main {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: #ededed;
+    color: rgb(59, 59, 59);
+    padding: 20px;
+}
+section {
+    font-family: 'Oxygen', sans-serif;
+}
+.my_img {
+    width: 350px;
+    border-radius: 10%;
+    margin: 20px;
+    border-bottom: 20px solid;
+    border-top: 20px solid;
+    border-right: 20px solid;
+    border-left: 20px solid;
+    border-right-color: rgb(16, 0, 96);
+    border-left-color: #6f8ad4;
+    border-top-color: rgb(16, 0, 96);
+    border-bottom-color: #6f8ad4;
+}
+.title {
+    color: black;
+    font-family: 'Teko', sans-serif;
+    font-size: 32px;
+    display: flex;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+.title h3 {
+    color: orange;
+}
+.contact_info {
+    padding: 20px;
+    margin:20px 20px;
+    width: 60%;
+    border-radius: 10px;
+    border: 1px solid rgb(220, 220, 220);
+}
+.about_me {
+    width: 70%;
+}
+.about_me p {
+    font-size: 26px;
+    font-weight: bold;
+}
+.about_me h3 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-left: 20px;
+    color: rgb(16, 0, 96);
+    text-transform: capitalize;
+}
+.hire-icon svg{
+    width: 24px;
+    float: right;
+}
+li{
+    list-style: none;
+    padding: 6px;
+    display: flex;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+    color: rgb(16, 0, 96);
+}
+li:hover{
+    color: rgb(125, 109, 207);
+}
+li svg {
+    padding-right: 10px;
+}
+li a{
+    text-decoration: none;
+    color: rgb(16, 0, 96);
+}
+li a:hover {
+    color: rgb(125, 109, 207);
+}
+form {
+    display: flex;
+    flex-direction: row;
+    width: 350px;
+    align-items: end;
+    margin-bottom: 20px;
+}
+input {
+    padding: 10px 15px;
+    width: 250px;
+    margin: 5px 20px;
+    border: 2px solid #92b3f9;
+    border-radius: 8px;
+}
+#submit {
+    width: 200px;
+    height: 50px;
+    padding: 6px 20px; 
+    margin: 6px 5px ;
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 8px;
+    background-color:rgb(16, 0, 96) ;
+    color: white;
+    letter-spacing: 1px;
+    border: none;
+}
+#submit:hover {
+    background-color: rgb(54, 33, 157);
+    cursor: pointer;
+}
+
+.motivation {
+    padding: 20px 50px 20px 50px;
+    background-color: #b8cfff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+.motivation_text{
+    width: 60%;
+}
+.motivation_text h3{
+    color:rgb(16, 0, 96) ;
+    font-size: 45px;
+    font-weight: bolder;
+}
+.motivation_text p {
+    font-weight: bold;
+    text-align: justify;
+    font-family: "Sofia", sans-serif;
+    font-size: 34px;
+    font-style: italic;
+}
+.profiles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(16, 0, 96);
+    width: 100%;
+
+}
+.link {
+    display: flex;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+.link:hover {
+    background-color: rgb(36, 16, 137);
+    color: orange;
+}
+.card >div> img {
+    width: 450px;
+    height: 250px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    object-fit: cover;
+}
+.projects {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    border: solid #d6d6d6;
+    border-width: 2px;
+    border-radius: 10px;
+    min-height: 560px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    width: 450px;
+}
+.card p {
+    padding-right: 10px;
+    text-decoration: none;
+    color: #484848;
+}
+.card a {
+    text-decoration: none;
+    color: orange;
+    font-weight: 600;
+}
+.used-tech {
+    margin-bottom: 0;
+    margin-top: auto;
+}
+.preview:hover {
+    background-color: rgb(36, 16, 137);
+    color: white
+}
+.preview {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(16, 0, 96);
+    color: white;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    letter-spacing: 1px;
+}
+.card h3, p{
+    padding-left: 20px;
+}
+.card h4, li{
+    padding-left: 20px;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000c25;
+    color: white;
+    padding: 20px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 16px;
+}
+footer p{
+    color: gray;
+}
+footer a{
+    text-decoration: none;
+    color: orange;
+    font-weight: 600;
+    padding-left: 5px;
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+    text-underline-position: above;
+}
