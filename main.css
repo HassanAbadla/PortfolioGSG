@@ -176,6 +176,14 @@ input {
     flex-wrap: wrap;
     justify-content: space-around;
 }
+.projects h2 {
+    flex: 100%;
+    padding: 20px;
+    font-size: 34px;
+    font-weight: bolder;
+    font-family: 'Teko', sans-serif;
+    color: #200061;
+}
 .card {
     display: flex;
     flex-direction: column;
@@ -186,6 +194,7 @@ input {
     margin-bottom: 20px;
     margin-right: 20px;
     width: 450px;
+    background-color: #f6f6f6;
 }
 .card p {
     padding-right: 10px;
