@@ -1,7 +1,12 @@
+html {
+    scroll-behavior: smooth;
+    
+}
+
 body{
     margin: 0px;
     padding: 0px;
-    
+    width: 100%;
 }
 main {
     display: flex;
@@ -11,23 +16,25 @@ main {
     align-items: center;
     background-color: #ededed;
     color: rgb(59, 59, 59);
-    padding: 20px;
+    padding: 50px 20px 20px 20px;
 }
 @media (max-width: 800px) {
     main {
+        width: 100%;
         display: flex;
         flex-direction: column;
-        justify-items: center;
-        align-content: center;
+        justify-content: center;
+        align-items: center;
     }
 }
 section {
     font-family: 'Oxygen', sans-serif;
 }
 .my_img {
-    width: 550px;
+    width: 100%;
     border-radius: 50%;
-    margin: 20px;
+    /* margin: 20px;
+    padding: 10px; */
     /* border-bottom: 20px solid;
     border-top: 20px solid;
     border-right: 20px solid;
@@ -47,7 +54,7 @@ section {
 }
 @media (max-width: 800px) {
     .title  {
-        font-size: 16px;
+        font-size: 12px;
     }
 }
 .title h3 {
@@ -55,17 +62,32 @@ section {
 }
 @media (max-width: 800px) {
     .title h3{
-        font-size: 22px;
+        font-size: 16px;
         padding-left: 5px;
     }
 }
 .contact_info {
-    padding: 20px;
-    margin:20px 20px;
-    width: 60%;
-    border-radius: 5px;
-    border: 1px solid rgb(220, 220, 220);
+    display: flex;
+    width: 100%;
 }
+
+.contact_info ul {
+    display: flex;
+    justify-items: start;
+    align-content: start;
+    margin-left: -40px;
+    width: 100%;
+}
+@media (max-width: 800px) {
+    .contact_info ul li {
+        font-size: 8px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 8px -8px;
+    }
+}
+
 .about_me {
     width: 90%;
 }
@@ -74,6 +96,12 @@ section {
     font-weight: 400;
     font-family: 'oxygen', sans-serif;
 }
+@media (max-width: 800px) {
+    .about_me p {
+        font-size: 16px;
+        padding-left: 5px;
+    }
+}
 .about_me h3 {
     font-family: 'Teko', sans-serif;
     font-size: 32px;
@@ -81,6 +109,12 @@ section {
     margin-left: 20px;
     color: #3b3b3b;
     text-transform: capitalize;
+}
+@media (max-width: 800px) {
+    .about_me h3 {
+        font-size: 16px;
+        padding-left: 5px;
+    }
 }
 .hire-icon svg{
     width: 24px;
@@ -93,9 +127,11 @@ li{
     font-family: 'Oxygen', sans-serif;
     font-weight: bold;
     color: #3b3b3b;
+    
 }
+
 li:hover{
-    color: #283845;
+    color: #3f5364;
 }
 li svg {
     padding-right: 10px;
@@ -110,27 +146,32 @@ li a:hover {
 form {
     display: flex;
     flex-direction: row;
-    width: 350px;
+    width: 400px;
     align-items: end;
     margin-bottom: 20px;
 }
 
+
 @media(max-width: 800px) {
     form {
+        width: 100%;
         display: flex;
         flex-direction: column;
-        justify-items: center;
+        justify-content: center;
         align-items: center;
     }
 }
 input {
-    padding: 10px 15px;
+    padding: 15px 15px;
     width: 250px;
     margin: 5px 20px;
-    border: 1px solid #d39761;
+    border: 1px solid #a3bbbe;
     border-radius: 5px;
 }
 #submit {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     width: 200px;
     height: 50px;
     padding: 6px 20px; 
@@ -160,17 +201,20 @@ input {
 }
 @media (max-width: 800px) {
     .motivation {
+        width: 100%;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-items: center;
         align-items: center;
+        padding: 20px;
     }
 }
 
 
 .motivation img {
-    border-radius: 10px;
+    border-radius: 20px;
+    width: 100%;
 }
 .motivation_text{
     margin: 20px;
@@ -179,7 +223,7 @@ input {
 
 @media (max-width: 800px) {
     .motivation_text {
-        width: 95%;
+        width: 100%;
     }
 }
 .motivation_text h3{
@@ -202,6 +246,7 @@ input {
 @media (max-width: 800px) {
     .motivation_text p {
         font-size: 18px;
+        padding: 15px -10px;
     }
 }
 .profiles {
@@ -214,11 +259,18 @@ input {
 }
 @media(max-width: 800px) {
     .profiles {
-        display: flex;
         flex-direction: column;
-        align-items: stretch;
-        justify-items: start;
-        padding-left: 50px;
+        /* align-items: stretch; */
+        align-content: start;
+        /* padding-left: 50px; */
+    }
+}
+.link_container{
+    width: 100%;
+}
+@media(max-width: 800px) {
+    .link_container {
+        float: left;
     }
 }
 .link {
@@ -226,16 +278,17 @@ input {
     color: white;
     padding: 10px 30px;
     text-decoration: none;
+    justify-content: center;
+    align-content: center;
 }
+
 .link:hover {
     background-color: #41565f;
     color: #e3b56c;
 }
 .card >div> img {
-    width: 350px;
+    width: 100%;
     height: 250px;
-    /* border-top-right-radius: 10px;
-    border-top-left-radius: 10px; */
     object-fit: cover;
 }
 .projects {
