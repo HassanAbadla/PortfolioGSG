@@ -33,7 +33,7 @@ section {
     font-family: 'Oxygen', sans-serif;
 }
 .my_img {
-    width: 100%;
+    width: 550px;
     border-radius: 50%;
     /* margin: 20px;
     padding: 10px; */
@@ -63,7 +63,7 @@ section {
     text-transform: uppercase;
     margin-left: 20px;
 }
-@media (max-width: 800px) {
+@media (max-width: 500px) {
     .title  {
         display: flex;
         /* flex-direction: column; */
@@ -76,7 +76,7 @@ section {
 .title h3 {
     color: #df9361;
 }
-@media (max-width: 800px) {
+@media (max-width: 500px) {
     .title h3{
         font-size: 16px;
         padding-left: 5px;
@@ -94,7 +94,7 @@ section {
     margin-left: -40px;
     width: 100%;
 }
-@media (max-width: 800px) {
+@media (max-width: 500px) {
     .contact_info ul li {
         font-size: 8px;
         width: 100%;
@@ -105,7 +105,7 @@ section {
     .hero-text{
         display: flex;
         flex-direction: column;
-        width: 90%;
+        width: 98%;
     }
 }
 
@@ -117,10 +117,18 @@ section {
     font-weight: 400;
     font-family: 'oxygen', sans-serif;
 }
-@media (max-width: 800px) {
+@media (max-width: 500px) {
+    .about_me {
+        width: 98%;
+        /* padding: 0 10px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     .about_me p {
         font-size: 16px;
-        padding-left: 5px;
+        /* padding: 5px; */
         text-align: justify;
     }
 }
@@ -132,7 +140,7 @@ section {
     color: #3b3b3b;
     text-transform: capitalize;
 }
-@media (max-width: 800px) {
+@media (max-width: 500px) {
     .about_me h3 {
         font-size: 16px;
         padding-left: 5px;
@@ -173,16 +181,6 @@ form {
     margin-bottom: 20px;
 }
 
-
-@media(max-width: 800px) {
-    form {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-}
 input {
     padding: 15px 15px;
     width: 250px;
@@ -211,6 +209,19 @@ input {
     cursor: pointer;
 }
 
+@media(max-width: 500px) {
+    form {
+        /* width: 100%; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #submit {
+        margin-top: 20px;
+    }
+}
+
 .motivation {
     padding: 20px 50px 20px 50px;
     background-color: #0a0e17;
@@ -221,7 +232,7 @@ input {
     align-items: center;
     font-size: x-large;
 }
-@media (max-width: 800px) {
+@media (max-width: 500px) {
     .motivation {
         width: 100%;
         display: flex;
@@ -243,7 +254,7 @@ input {
     width: 60%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 500px) {
     .motivation {
         padding: 0;
         margin: 0;
@@ -255,7 +266,7 @@ input {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 500px) {
     .motivation_text {
         width: 90%;
     }
@@ -272,15 +283,15 @@ input {
     font-size: 34px;
     font-style: italic;
 }
-@media (max-width: 800px) {
+@media (max-width: 500px) {
     .motivation_text h3 {
         font-size: 22px;
     }
 }
-@media (max-width: 800px) {
+@media (max-width: 500px) {
     .motivation_text p {
         font-size: 18px;
-        padding: 15px -10px;
+        padding: 10px;
     }
 }
 .profiles {
@@ -291,7 +302,7 @@ input {
     background-color: #26343f;
     width: 100%;
 }
-@media(max-width: 800px) {
+@media(max-width: 500px) {
     .profiles {
         display: flex;
         flex-direction: column;
@@ -303,11 +314,7 @@ input {
 .link_container{
     width: 100%;
 }
-@media(max-width: 500px) {
-    .link_container {
-        float: left;
-    }
-}
+
 .link {
     display: flex;
     color: white;
@@ -322,6 +329,7 @@ input {
         align-items: center;
         justify-content: flex-start;
         padding: 10px;
+        margin-left: 20px;
         /* justify-content: center; */
     }
 }
