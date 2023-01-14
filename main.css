@@ -293,16 +293,17 @@ input {
 }
 @media(max-width: 800px) {
     .profiles {
+        display: flex;
         flex-direction: column;
-        /* align-items: stretch; */
-        align-content: start;
+        align-items: center;
+        justify-content: center;
         /* padding-left: 50px; */
     }
 }
 .link_container{
     width: 100%;
 }
-@media(max-width: 800px) {
+@media(max-width: 500px) {
     .link_container {
         float: left;
     }
@@ -314,6 +315,15 @@ input {
     text-decoration: none;
     justify-content: center;
     align-content: center;
+}
+@media(max-width: 500px) {
+    .link {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 10px;
+        /* justify-content: center; */
+    }
 }
 
 .link:hover {
